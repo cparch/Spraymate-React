@@ -1,0 +1,30 @@
+.leftArrow {
+	font-size: 100px;
+	font-weight: 100px;
+	color: white;
+	float: left;
+	padding-top: 10%;
+	padding-bottom: 10%;
+	padding-left: 2%;
+	padding-right: 2%;
+	background-color:rgba(0, 2, 128, 0.5);
+	margin: 25% 0 0 3%;
+    cursor: pointer;
+    display: block;
+}
+
+.rightArrow {
+	font-size: 100px;
+	font-weight: 100px;
+	color: white;
+	float: right;
+	padding-top: 10%;
+	padding-bottom: 10%;
+	padding-left: 2%;
+	padding-right: 2%;
+    margin: 25% 3% 0 0;
+    cursor: pointer;
+    background-color:green;
+    display: block;
+
+}
