@@ -18,6 +18,7 @@ class App extends Component {
         <About/>
         <Testimonial/>
         <Contact/>
+        <hello/>
       </div>
     );
   }
