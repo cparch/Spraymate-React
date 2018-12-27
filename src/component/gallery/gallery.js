@@ -4,9 +4,9 @@ import {connect} from 'react-redux';
 import classes from './gallery.css';
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faIgloo } from '@fortawesome/free-solid-svg-icons'
+import { faArrowCircleLeft, faArrowCircleRight } from '@fortawesome/free-solid-svg-icons'
 
-library.add(faIgloo)
+library.add(faArrowCircleLeft, faArrowCircleRight)
 
 class LeftScrollBtn extends Component {
 
@@ -50,8 +50,10 @@ class LeftScrollBtn extends Component {
       
       return (
         <div>
-            <div className = {classes.leftArrow} onClick={() => {this.props.leftBtnClick(); this.updateImg();}}> <FontAwesomeIcon icon="igloo" /> </div>
-            <div className={classes.rightArrow} onClick={() => {this.props.rightBtnClick(); this.updateImg();}}> <FontAwesomeIcon icon="igloo" /> </div>    
+            <div className = {classes.leftArrow} onClick={() => {this.props.leftBtnClick(); this.updateImg();}}> <FontAwesomeIcon icon="arrow-circle-left" /> </div>
+
+
+             <div className={classes.rightArrow} onClick={() => {this.props.rightBtnClick(); this.updateImg();}}> <FontAwesomeIcon icon="arrow-circle-right" /> </div>
        </div>
       );
     }

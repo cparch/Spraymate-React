@@ -7,6 +7,7 @@ import {createStore} from 'redux'
 import reducer from './store/reducer';
 import {Provider} from 'react-redux';
 import {BrowserRouter} from 'react-router-dom';
+import '../node_modules/font-awesome/css/font-awesome.min.css';
 
 const store = createStore(reducer);
 
