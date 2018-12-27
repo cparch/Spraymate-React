@@ -5,6 +5,7 @@ import Gallery from './component/gallery/gallery'
 import About from './component/about/about'
 import Testimonial from './component/testimonial/testimonial';
 import Contact from './component/contact/contact';
+import {Route} from 'react-router-dom';
 
 
 class App extends Component {
@@ -12,12 +13,17 @@ class App extends Component {
     return (
       <div className="App">
         <NavBar />
-        {/* <h1> Hi, I am a react app </h1> */}
-        <Gallery />
-        <hr/>
-        <About/>
-        <Testimonial/>
-        <Contact/>
+        {/* <Gallery /> */}
+        <Route path="/Gallery" component={Gallery} />
+        {/* <About/> */}
+        <Route path="/About" component={About} />
+
+        {/* <Testimonial/> */}
+        <Route path="/Testimonial" component={Testimonial} />
+
+        {/* <Contact/> */}
+        <Route path="/Contact" component={Contact} />
+
       </div>
     );
   }
