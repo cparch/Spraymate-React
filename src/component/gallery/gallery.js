@@ -11,7 +11,11 @@ library.add(faArrowCircleLeft, faArrowCircleRight)
 class LeftScrollBtn extends Component {
 
     updateImg = () => {
-      document.body.style.background= `url(${this.props.images[this.props.count]})`; 
+      document.body.style.background = `url(${this.props.images[this.props.count]})`; 
+      document.body.style.backgroundRepeat = "no repeat";
+      document.body.style.backgroundPosition = 'center';
+      document.body.style.backgroundSize = 'cover';
+      document.body.style.backgroundAttachment = 'fixed'
     };
 
     // f1 runs then, 1 ml sec goes by and the background image will update
@@ -27,7 +31,7 @@ class LeftScrollBtn extends Component {
       // console.log("img length " + this.props.images.length)
       
       return (
-        <div>
+        <div className={classes.body}>
 
             {/* v works, but calls the last count, not the current count. I want it to change the count, then update the image. */}
 
