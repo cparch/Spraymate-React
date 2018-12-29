@@ -10,50 +10,53 @@ library.add(faArrowCircleLeft, faArrowCircleRight)
 
 class LeftScrollBtn extends Component {
 
- 
-    // const updateBackgroundImg = () => {
-    //   document.body.style.background= `url(${images[this.state.count]})
-    // }
-
-    //When the right button is clicked, this.state.count += 1
-    // rightBtnClick = () => {
-      // this.setState.count = (this.state.count + 1) % this.state.count;
-      // const count = (this.state.count + 1 ) % this.state.count;
-      // this.setState({ count });
-
-      // this.setState(state => {
-      //   this.state.count =  (this.state.count + 1) % images.length;
-      //   document.body.style.background= `url(${images[this.state.count]})`;
-      // });
-       
-    // };
-
-  
-
-    // //when the left button is clicked, count -=1
-
-    // leftBtnClick = () => {
-    //   this.setState.count= this.state.count -= 1;
-    //   console.log(this.state.count);
-    //   document.body.style.background= "url(" + images[this.state.count] + ")"; 
-    // };
-
-        updateImg = () => {
-          document.body.style.background= `url(${this.props.images[this.props.count]})`; 
+    updateImg = () => {
+      document.body.style.background= `url(${this.props.images[this.props.count]})`; 
     };
-  
+
+    // f1 runs then, 1 ml sec goes by and the background image will update
+   ClickHandler = (f1) => {
+      f1;
+      setTimeout(this.updateImg, 1)
+    };
+ 
     
     render() {
 
-      console.log('count ' + this.props.count);
+      // console.log('count ' + this.props.count + "  from render");
       // console.log("img length " + this.props.images.length)
       
       return (
         <div>
-            <div className = {classes.leftArrow} onClick={() => {this.props.leftBtnClick(); this.updateImg();}}> <FontAwesomeIcon icon="arrow-circle-left" /> </div>
+
+            {/* v works, but calls the last count, not the current count. I want it to change the count, then update the image. */}
+
+            {/* <div className = {classes.leftArrow} 
+              onClick={() => { this.props.leftBtnClick(); this.updateImg();}}> 
+              <FontAwesomeIcon icon="arrow-circle-left" /> 
+            </div> */}
 
 
-             <div className={classes.rightArrow} onClick={() => {this.props.rightBtnClick(); this.updateImg();}}> <FontAwesomeIcon icon="arrow-circle-right" /> </div>
+              {/* v call back function v */}
+              <div className = {classes.leftArrow} 
+                  onClick={() => {this.ClickHandler(this.props.leftBtnClick());}}> 
+                  <FontAwesomeIcon icon="arrow-circle-left" /> 
+              </div>
+
+
+              {/* v works, but calls the last count, not the current count. I want it to change the count, then update the image. */}
+              
+              {/* <div className={classes.rightArrow} 
+                onClick={() => { this.props.rightBtnClick(); this.updateImg();}}> 
+                <FontAwesomeIcon icon="arrow-circle-right" /> 
+              </div> */}
+
+              {/* v call back function v */}
+              <div className = {classes.rightArrow} 
+                  onClick={() => {this.ClickHandler(this.props.rightBtnClick());}}> 
+                  <FontAwesomeIcon icon="arrow-circle-right" /> 
+              </div>
+
        </div>
       );
     }
