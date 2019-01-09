@@ -60,6 +60,8 @@ class LeftScrollBtn extends Component {
                   onClick={() => {this.ClickHandler(this.props.rightBtnClick());}}> 
                   <FontAwesomeIcon icon="arrow-circle-right" /> 
               </div>
+              
+          
 
        </div>
       );
@@ -68,8 +70,8 @@ class LeftScrollBtn extends Component {
 
   const mapStateToProps = state => {
     return {
-       count: state.count, //< persons needs to match the state in reducer//
-       images: state.images
+       count: state.count,
+       images: state.images,
     };
  };
  
@@ -78,6 +80,7 @@ class LeftScrollBtn extends Component {
      rightBtnClick: () => dispatch({type: actionTypes.ADD_TO_COUNT}),
      leftBtnClick: () => dispatch({type: actionTypes.REMOVE_FROM_COUNT}),
     //  onRemovedPerson: (id) => dispatch({type: actionTypes.REMOVE_PERSON, personId: id})
+   
    }  
  }; 
  
