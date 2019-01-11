@@ -1,0 +1,16 @@
+.mainContainer {
+    background-color: rgba(128, 128, 128, 0.8);
+    width: 25%;
+    margin: auto;
+    display: block;
+    color: black;
+    margin: auto;
+    border: black 20 px solid;
+    margin: 10% 12.5%;
+    padding: 20px;
+    width: 75%;
+    height: 75%;
+    /* overflow: scroll; */
+    /* overflow: hidden; */
+    /* overflow: auto; */
+}

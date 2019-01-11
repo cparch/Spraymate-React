@@ -60,9 +60,6 @@ class LeftScrollBtn extends Component {
                   onClick={() => {this.ClickHandler(this.props.rightBtnClick());}}> 
                   <FontAwesomeIcon icon="arrow-circle-right" /> 
               </div>
-              
-          
-
        </div>
       );
     }

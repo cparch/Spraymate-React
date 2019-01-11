@@ -3,7 +3,7 @@ import './App.css';
 import NavBar from './navBar';
 import Gallery from './component/gallery/gallery'
 import About from './component/about/about'
-import Testimonial from './component/testimonial/testimonial';
+import TestimonialList from './component/testimonialList/testimonialList';
 import Contact from './component/contact/contact';
 import {Route} from 'react-router-dom';
 
@@ -20,7 +20,7 @@ class App extends Component {
         <Route path="/About" component={About} />
 
         {/* <Testimonial/> */}
-        <Route path="/Testimonial" component={Testimonial} />
+        <Route path="/Testimonial" component={TestimonialList} />
 
         {/* <Contact/> */}
         <Route path="/Contact" component={Contact} />
