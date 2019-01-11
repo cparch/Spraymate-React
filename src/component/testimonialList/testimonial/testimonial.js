@@ -33,12 +33,11 @@ const Testimonial = (props) => {
 
 
 
-    const readMeHandler = () => {
-
-        printOut = props.full_Testimonial[props.index]
-        // printOut = "test"
-        // printOut = props.i
-        // alert("test")
+    const readMeHandler = (fullReadMore) => {
+        // printOut = fullReadMore;
+            // printOut = "test"
+            // printOut = props.i
+            alert(fullReadMore)
     };
 
     return (
@@ -47,7 +46,8 @@ const Testimonial = (props) => {
             <div className = {classes.individualContainer}> {printOut} </div>
 
             <div className = {classes.readMore}
-              onClick = {() => {readMeHandler()}}>- Read More </div>
+            onClick = {() => {readMeHandler( props.full_Testimonial[props.index] )}}>- Read More </div> */}
+           
             {/* onClick = {props.readMore}>- Read More </div> */}
             {/* <div> {printOut}</div> */}
             {/* <div> {props.full_Testimonial[props.index]} </div> */}
