@@ -1,5 +1,21 @@
 import * as actionTypes from './actions';
 
+//testimonialSameples, and testimonialSameplesReducer should creat a function that allows me to
+//just add sample paragraphs and full paragraphs to the array. It should just add the sample
+//paragraph to an obj with the sample text and a showFullTestimonial:false
+
+// const testimonialSameples = ["SprayMate's results were so far superior and all done with minimum fuss and bother",
+//         "No matter how carefully I look, the piece seems as good as when I brought it home",
+//         "I have been using Spraymate for ten years. As a professional painting contractor I appreciate great quality and timely service"],
+
+
+// testimonialSameplesReducer = () => testimonialSameples.reduce((acc, e) => {
+//     acc.push({testimonialSample: e,
+//    showFullTestimonial: false });
+
+//     return acc
+// }, []);
+
 const initialState = {
     count: 0,
     images: [
@@ -13,9 +29,10 @@ const initialState = {
         "When a plumber accidentally splashed wastewater with drain cleaner on a painted TV console, I was convinced it was destroyed. And then came Rick and Stacey to the rescue! They looked at the pictures, said 'no problem', gave me a fast and fair quote and answered all of my questions with grace and speed. The only pain was slogging through traffic to get the console from my Daly City home to their shop in Newark. No matter how carefully I look, the piece seems as good as when I brought it home. So glad to have found them and happy to give them my highest recommendation!",
         "I have been using Spraymate for ten years. As a professional painting contractor I appreciate great quality and timely service. Rick and Stacy have come through for me time and time again."],
     
-    testimonialSample: ["SprayMate's results were so far superior and all done with minimum fuss and bother",
-        "No matter how carefully I look, the piece seems as good as when I brought it home",
-        "I have been using Spraymate for ten years. As a professional painting contractor I appreciate great quality and timely service"],
+    testimonialSample: [{testimonialSampless:"SprayMate's results were so far superior and all done with minimum fuss and bother", showFulTestimonial: false},
+        {testimonialSampless:"No matter how carefully I look, the piece seems as good as when I brought it home", showFulTestimonial: false},
+        {testimonialSampless: "I have been using Spraymate for ten years. As a professional painting contractor I appreciate great quality and timely service",
+         showFulTestimonial: false}],
     
     readMe: "null",
 }

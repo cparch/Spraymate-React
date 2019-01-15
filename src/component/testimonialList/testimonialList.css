@@ -14,3 +14,23 @@
     /* overflow: hidden; */
     /* overflow: auto; */
 }
+
+.individualContainer {
+    background-color: #ffffff42;
+    display: block;
+    padding: 20px 20px 0px 20px;
+    margin: 20px 20px 0px 20px;
+    text-align: center;
+    color: black;
+    font-size: 40px;   
+}
+
+.readMore {
+    background-color: #ffffff42;
+    display: block;
+    padding: 0 20px 20px 20px;
+    margin: 0 20px 20px 20px;
+    text-align: right;
+    color: black;
+    font-size: 20px;   
+}
