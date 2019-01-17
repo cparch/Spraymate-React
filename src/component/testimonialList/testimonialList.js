@@ -7,11 +7,16 @@ class TestimonialList extends Component {
 
     render() {
 
-        const testimonialLists = this.props.testimonialSamples.map((e) => {
+        const testimonialLists = this.props.testimonialSamples.map((e, i) => {
+
             return (
                 <div>
-                    <div className = {classes.individualContainer}> {e.testimonialSampless} </div> 
-                    <div className = {classes.readMore}>- Read More</div>
+                    <div className = {classes.individualContainer}> {e} </div> 
+
+                    <div className = {classes.readMore}
+                        // onClick = {(i) => {this.props.read_more(i)}}>- Read More</div>
+                        onClick = {() => {this.props.read_more(i)}}>- Read More</div>
+
                 </div>)
             
             
@@ -19,9 +24,9 @@ class TestimonialList extends Component {
 
         return (
 
+
         <div className={classes.mainContainer}>
             {testimonialLists}
-
         </div>
         )
     }
@@ -38,8 +43,7 @@ const mapStateToProps = state => {
  
  const mapDispatchToProps = dispatch => {
    return {
-    read_more: (e) => dispatch({type: actionTypes.READ_ME, shortText: e}),
-    leftBtnClick: () => dispatch({type: actionTypes.REMOVE_FROM_COUNT}),
+    read_more: (i) => dispatch({type: actionTypes.READ_ME, indexSport: i}),
    }  
  }; 
  
