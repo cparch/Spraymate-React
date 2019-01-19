@@ -1,8 +1,8 @@
 import * as actionTypes from './actions';
 
-const sampleTestimony = ["SprayMate's results were so far superior and all done with minimum fuss and bother",
-"No matter how carefully I look, the piece seems as good as when I brought it home",
- "I have been using Spraymate for ten years. As a professional painting contractor I appreciate great quality and timely service",]
+const sampleTestimony = [{text:"SprayMate's results were so far superior and all done with minimum fuss and bother", showSample: true},
+{text: "No matter how carefully I look, the piece seems as good as when I brought it home", showSample: true},
+ {text: "I have been using Spraymate for ten years. As a professional painting contractor I appreciate great quality and timely service", showSample:true}]
 
  const fullParagraph = ["I did a major upgrade on my condo. Rather than replace my old, solid wood kitchen cabinets, I contracted with SprayMate to paint the old cabinet boxes and install freshly painted, MDF constructed top to bottom and side to side drawers and doors using a semigloss paint with interior hinges replacing exterior hinges. The finished project turned out exactly the way I'd hoped. What had been funky, 1960's era cabinets now looked like they'd been replaced with the brand new, contemporary, clean white European cabinets. While a bit more expensive than most of the painters I talked with, SprayMate's results were so far superior and all done with minimum fuss and bother, efficiently and great responsiveness to my questions and preferences. I can't recommend SprayMate more highly.",
  "When a plumber accidentally splashed wastewater with drain cleaner on a painted TV console, I was convinced it was destroyed. And then came Rick and Stacey to the rescue! They looked at the pictures, said 'no problem', gave me a fast and fair quote and answered all of my questions with grace and speed. The only pain was slogging through traffic to get the console from my Daly City home to their shop in Newark. No matter how carefully I look, the piece seems as good as when I brought it home. So glad to have found them and happy to give them my highest recommendation!",
@@ -48,7 +48,11 @@ const reducer = (state = initialState, action) => {
         case actionTypes.READ_ME:
 
             const updatedTestimonialSample = [...sampleTestimony]
-            updatedTestimonialSample.splice(action.indexSport, 1, fullParagraph[action.indexSport])
+            // updatedTestimonialSample[action.indexSport].text.splice(action.indexSport, 1, fullParagraph[action.indexSport])
+            updatedTestimonialSample[action.indexSport].text = fullParagraph[action.indexSport];
+            updatedTestimonialSample[action.indexSport].showSample = false;
+
+
             return {
                 ...state,
                 showTestimonial: updatedTestimonialSample
