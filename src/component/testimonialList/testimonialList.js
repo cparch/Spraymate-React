@@ -4,15 +4,20 @@ import * as actionTypes from '../../store/actions';
 import {connect} from 'react-redux';
 
 class TestimonialList extends Component {
+    
+    alertHandler = () => {
+        alert("text")
+    };
 
     render() {
 
-        let moreLessButton = "- read more"
-
         const testimonialLists = this.props.showTestimonial.map((e, i) => {
 
+            let moreLessButton = "- read more"
+            // let func = this.alertHandler()
+
             if (this.props.showTestimonial[i].showSample === false){
-                moreLessButton = " "
+                moreLessButton = "- show less << still working on this feature"
             }
 
             return (
@@ -20,10 +25,10 @@ class TestimonialList extends Component {
                     <div className = {classes.individualContainer}> {e.text} </div> 
 
                     <div className = {classes.readMore}
-                        // onClick = {(i) => {this.props.read_more(i)}}>- Read More</div>
-                        // onClick = {() => {this.props.read_more(i)}}>- Read More</div>
-                        onClick = {() => {this.props.read_more(i)}}>{moreLessButton}</div>
-                    
+                        onClick = {() => {this.props.read_more(i)}}>{moreLessButton}
+                        {/* onClick = {() => {func}}> {moreLessButton} */}
+                        
+                    </div>
 
                 </div>)
                 });
@@ -50,6 +55,7 @@ const mapStateToProps = state => {
  const mapDispatchToProps = dispatch => {
    return {
     read_more: (i) => dispatch({type: actionTypes.READ_ME, indexSport: i}),
+    read_less: (i) => dispatch({type: actionTypes.READ_LESS, idx: i})
    }  
  }; 
  
