@@ -7,22 +7,25 @@ class TestimonialList extends Component {
 
     render() {
 
-        let moreLessButton = "test from jan 18th"
+        let moreLessButton = "- read more"
 
         const testimonialLists = this.props.showTestimonial.map((e, i) => {
 
+            if (this.props.showTestimonial[i].showSample === false){
+                moreLessButton = " "
+            }
+
             return (
                 <div>
-                    <div className = {classes.individualContainer}> {e} </div> 
+                    <div className = {classes.individualContainer}> {e.text} </div> 
 
                     <div className = {classes.readMore}
                         // onClick = {(i) => {this.props.read_more(i)}}>- Read More</div>
                         // onClick = {() => {this.props.read_more(i)}}>- Read More</div>
-                        onClick = {() => {this.props.read_more(i)}}>- {moreLessButton}</div>
+                        onClick = {() => {this.props.read_more(i)}}>{moreLessButton}</div>
+                    
 
                 </div>)
-            
-            
                 });
 
         return (
