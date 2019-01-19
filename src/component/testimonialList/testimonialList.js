@@ -7,7 +7,9 @@ class TestimonialList extends Component {
 
     render() {
 
-        const testimonialLists = this.props.testimonialSamples.map((e, i) => {
+        let moreLessButton = "test from jan 18th"
+
+        const testimonialLists = this.props.showTestimonial.map((e, i) => {
 
             return (
                 <div>
@@ -15,7 +17,8 @@ class TestimonialList extends Component {
 
                     <div className = {classes.readMore}
                         // onClick = {(i) => {this.props.read_more(i)}}>- Read More</div>
-                        onClick = {() => {this.props.read_more(i)}}>- Read More</div>
+                        // onClick = {() => {this.props.read_more(i)}}>- Read More</div>
+                        onClick = {() => {this.props.read_more(i)}}>- {moreLessButton}</div>
 
                 </div>)
             
@@ -36,7 +39,7 @@ const mapStateToProps = state => {
     return {
        count: state.count,
        readMe: state.readMe,
-       testimonialSamples: state.testimonialSample,
+       showTestimonial: state.showTestimonial,
        fullTestimonial: state.fullParagraph
     };
  };
