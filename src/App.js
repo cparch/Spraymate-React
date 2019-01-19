@@ -1,5 +1,6 @@
 import React, { Component } from 'react'; 
 import './App.css';
+import { Button } from 'react-bootstrap';
 import NavBar from './navBar';
 import Gallery from './component/gallery/gallery'
 import About from './component/about/about'
