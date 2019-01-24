@@ -8,8 +8,8 @@ import classes from './background.css';
 class Background extends Component {
 
       updateImg = () => {
-    //   document.body.style.background = `url(${this.props.imageUrl[this.props.count]})`; 
-      document.body.style.background = `url(${this.props.imageUrl[3]})`; 
+      document.body.style.background = `url(${this.props.imageUrl[this.props.count]})`; 
+      // document.body.style.background = `url(${this.props.imageUrl[3]})`; 
       document.body.style.backgroundRepeat = "no repeat";
       document.body.style.backgroundPosition = 'center';
       document.body.style.backgroundSize = 'cover';
@@ -18,11 +18,7 @@ class Background extends Component {
 
     render() {
         return (
-
-        <div>
-           <div className = {classes.white}> {this.props.imageUrl[this.props.count]} </div>
            <div> {this.updateImg()} </div>
-        </div>
         )
     }
 }
