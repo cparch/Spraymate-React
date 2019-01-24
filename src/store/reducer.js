@@ -48,7 +48,6 @@ const reducer = (state = initialState, action) => {
         case actionTypes.READ_ME:
 
             const updatedTestimonialSample = [...sampleTestimony]
-            // updatedTestimonialSample[action.indexSport].text.splice(action.indexSport, 1, fullParagraph[action.indexSport])
             updatedTestimonialSample[action.indexSport].text = fullParagraph[action.indexSport];
             updatedTestimonialSample[action.indexSport].showSample = false;
 
@@ -57,13 +56,6 @@ const reducer = (state = initialState, action) => {
                 ...state,
                 showTestimonial: updatedTestimonialSample
             }
-                // const updatedTestimonialSample = [...state.testimonialSample]
-                // updatedTestimonialSample.splice(action.indexSport, 1, state.fullParagraph[action.indexSport])
-                
-                // return {
-                //     ...state,
-                //     testimonialSample: updatedTestimonialSample
-                // }
     }
    return state;
 };
