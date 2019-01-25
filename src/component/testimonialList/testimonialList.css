@@ -10,9 +10,6 @@
     padding: 20px;
     width: 75%;
     height: 75%;
-    /* overflow: scroll; */
-    /* overflow: hidden; */
-    /* overflow: auto; */
 }
 
 .individualContainer {
@@ -33,4 +30,9 @@
     text-align: right;
     color: black;
     font-size: 20px;   
+}
+
+.readMore:hover {
+    font-weight: bold;
+    cursor: pointer;
 }
