@@ -14,7 +14,7 @@ class TestimonialList extends Component {
             if (this.props.showTestimonial[i].showSample === false){
                 moreLessButton = null
             }
-
+            
             return (
                 <div>
                     <div className = {classes.individualContainer}> {e.text} </div> 
@@ -25,12 +25,12 @@ class TestimonialList extends Component {
 
                 </div>)
                 });
-        // return (
+        return (
 
-        // <div className={classes.mainContainer}>
-        //     {testimonialLists}
-        // </div>
-        // )
+        <div className={classes.mainContainer}>
+            {testimonialLists}
+        </div>
+        )
     }
 }
 
