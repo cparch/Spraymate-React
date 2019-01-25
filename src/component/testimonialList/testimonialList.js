@@ -17,7 +17,7 @@ class TestimonialList extends Component {
             // let func = this.alertHandler()
 
             if (this.props.showTestimonial[i].showSample === false){
-                moreLessButton = "- show less << still working on this feature"
+                moreLessButton = null
             }
 
             return (
@@ -26,7 +26,6 @@ class TestimonialList extends Component {
 
                     <div className = {classes.readMore}
                         onClick = {() => {this.props.read_more(i)}}>{moreLessButton}
-                        {/* onClick = {() => {func}}> {moreLessButton} */}
                         
                     </div>
 
