@@ -10,24 +10,10 @@ library.add(faArrowCircleLeft, faArrowCircleRight)
 
 class LeftScrollBtn extends Component {
 
-    // updateImg = () => {
-    //   document.body.style.background = `url(${this.props.images[this.props.count]})`; 
-    //   document.body.style.backgroundRepeat = "no repeat";
-    //   document.body.style.backgroundPosition = 'center';
-    //   document.body.style.backgroundSize = 'cover';
-    //   document.body.style.backgroundAttachment = 'fixed'
-    // };
-
-  //  ClickHandler = (f1) => {
-  //     f1;
-  //     setTimeout(this.updateImg, 1)
-  //   };
-
   ClickHandler = (f1) => {
     f1;
   };
  
-    
     render() {
       
       return (
