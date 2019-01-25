@@ -4,22 +4,32 @@ import * as actionTypes from '../../store/actions';
 import {connect} from 'react-redux';
 
 class TestimonialList extends Component {
+    
+    alertHandler = () => {
+        alert("text")
+    };
 
     render() {
 
-        const testimonialLists = this.props.testimonialSamples.map((e, i) => {
+        const testimonialLists = this.props.showTestimonial.map((e, i) => {
+
+            let moreLessButton = "- read more"
+            // let func = this.alertHandler()
+
+            if (this.props.showTestimonial[i].showSample === false){
+                moreLessButton = null
+            }
 
             return (
                 <div>
-                    <div className = {classes.individualContainer}> {e} </div> 
+                    <div className = {classes.individualContainer}> {e.text} </div> 
 
                     <div className = {classes.readMore}
-                        // onClick = {(i) => {this.props.read_more(i)}}>- Read More</div>
-                        onClick = {() => {this.props.read_more(i)}}>- Read More</div>
+                        onClick = {() => {this.props.read_more(i)}}>{moreLessButton}
+                        
+                    </div>
 
                 </div>)
-            
-            
                 });
 
         return (
@@ -36,7 +46,7 @@ const mapStateToProps = state => {
     return {
        count: state.count,
        readMe: state.readMe,
-       testimonialSamples: state.testimonialSample,
+       showTestimonial: state.showTestimonial,
        fullTestimonial: state.fullParagraph
     };
  };
@@ -44,6 +54,7 @@ const mapStateToProps = state => {
  const mapDispatchToProps = dispatch => {
    return {
     read_more: (i) => dispatch({type: actionTypes.READ_ME, indexSport: i}),
+    read_less: (i) => dispatch({type: actionTypes.READ_LESS, idx: i})
    }  
  }; 
  
