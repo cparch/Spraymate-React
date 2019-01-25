@@ -4,17 +4,12 @@ import * as actionTypes from '../../store/actions';
 import {connect} from 'react-redux';
 
 class TestimonialList extends Component {
-    
-    alertHandler = () => {
-        alert("text")
-    };
 
     render() {
 
         const testimonialLists = this.props.showTestimonial.map((e, i) => {
 
             let moreLessButton = "- read more"
-            // let func = this.alertHandler()
 
             if (this.props.showTestimonial[i].showSample === false){
                 moreLessButton = null
@@ -25,20 +20,17 @@ class TestimonialList extends Component {
                     <div className = {classes.individualContainer}> {e.text} </div> 
 
                     <div className = {classes.readMore}
-                        onClick = {() => {this.props.read_more(i)}}>{moreLessButton}
-                        
+                        onClick = {() => {this.props.read_more(i)}}>{moreLessButton}  
                     </div>
 
                 </div>)
                 });
+        // return (
 
-        return (
-
-
-        <div className={classes.mainContainer}>
-            {testimonialLists}
-        </div>
-        )
+        // <div className={classes.mainContainer}>
+        //     {testimonialLists}
+        // </div>
+        // )
     }
 }
 
