@@ -1,7 +1,29 @@
-.contact {
-    background-color: palevioletred;
+.mainContainer {
     width: 25%;
-    margin: auto;
     display: block;
-    margin: auto;
+    margin: 13% auto;
+    padding: 30px;
+    background: #8E2DE2;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: white;
+    width: 50%;
+    border: white solid 10px;
+}
+
+label {
+    display: block;
+    padding: 1em 0em 0em 0em;
+}
+
+input {
+    width: 100%;
+}
+
+textarea {
+    width: 100%;
+}
+
+button {
+    cursor: pointer;
 }
