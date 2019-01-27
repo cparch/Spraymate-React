@@ -10,20 +10,3 @@
     width: 50%;
     border: white solid 10px;
 }
-
-label {
-    display: block;
-    padding: 1em 0em 0em 0em;
-}
-
-input {
-    width: 100%;
-}
-
-textarea {
-    width: 100%;
-}
-
-button {
-    cursor: pointer;
-}

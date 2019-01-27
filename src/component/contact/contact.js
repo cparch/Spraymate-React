@@ -1,20 +1,20 @@
 import React from 'react';
-import classes from './contact.css';
+// import classes from './contact.css';
+import ContactIndividual from './contactIndividual/contactIndividual';
 
-const Contact = () => {
+const Contact = (props) => {
     return (
-        <div >
-                <form className={classes.mainContainer}>
-                    <label> Name </label>
-                    <input type="text" />
-                    <label> email address </label>
-                    <input type="email" />
-                    <label> Message </label>
-                    <textarea/>
-                    <button> submit "not functional yet" </button>
-                </form>
+        // <div className ={classes.mainContainer}>
+        <div>
+            <ContactIndividual
+            header = 'Call Us'
+            contactInfo= '510-796-7922' />
+
+            <ContactIndividual
+            header = 'Email Us'
+            contactInfo= 'spraymate@comcast.net' />
         </div>
-    );
+    )
 };
 
 export default Contact;
