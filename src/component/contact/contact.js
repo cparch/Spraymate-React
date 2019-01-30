@@ -8,10 +8,12 @@ const Contact = (props) => {
         {/* <div> */}
             <ContactIndividual
             header = 'Call Us'
+            symbol = "phone"
             contactInfo= '510-796-7922' />
 
             <ContactIndividual
             header = 'Email Us'
+            symbol = 'envelope'
             contactInfo= 'spraymate@comcast.net' />
         </div>
     )
