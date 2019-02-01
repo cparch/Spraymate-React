@@ -1,6 +1,6 @@
 import React, { Component } from 'react'; 
 import './App.css';
-import NavBar from './navBar';
+import NavBar from './component/Navigation/navBar';
 import Gallery from './component/gallery/gallery'
 import About from './component/about/about'
 import TestimonialList from './component/testimonialList/testimonialList';
