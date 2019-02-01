@@ -8,7 +8,7 @@ const navItems = (props) => (
             link="/Gallery"
             active> Gallery </NavItem>
         <NavItem
-            link="/Testimony"
+            link="/Testimonial"
             active> Testimony </NavItem>
         <NavItem
             link="/About"

@@ -5,6 +5,12 @@ const Contact = () => {
     return (
         <div className={classes.contact}>
             <div> test from contact</div>
+            <div> test from contact</div>
+            <div> test from contact</div>
+            <div> test from contact</div>
+            <div> test from contact</div>
+            <div> test from contact</div>
+            <div> test from contact</div>
         </div>
     );
 };

@@ -7,7 +7,7 @@ const NavBar = () => {
   return (
 
     <header className={classes.navBar}> 
-      <div>MENU</div>
+      <div>Spraymate</div>
       <nav> 
         <NavItems/>
       </nav>
