@@ -23,6 +23,7 @@ const initialState = {
     showTestimonial: [...sampleTestimony],
     
     readMe: "null",
+    showSideDrawer: false,
 }
 
 const reducer = (state = initialState, action) => {
@@ -55,6 +56,16 @@ const reducer = (state = initialState, action) => {
             return {
                 ...state,
                 showTestimonial: updatedTestimonialSample
+            }
+
+            case actionTypes.TOOGLE_SIDEDRAWER:
+
+            const SideDrawer = state.showSideDrawer
+            const updatedSideDrawer = !SideDrawer
+
+            return {
+                ...state,
+                showSideDrawer: updatedSideDrawer
             }
     }
    return state;
