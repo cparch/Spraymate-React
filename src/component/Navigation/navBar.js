@@ -1,14 +1,14 @@
 import React from "react";
 import classes from './navBar.css';
-// import { Link } from 'react-router-dom';
 import NavItems from './navItems/navItems.js';
 
 const NavBar = () => {
   return (
 
     <header className={classes.navBar}> 
-      <div>Spraymate</div>
-      <nav> 
+      <div className={classes.mobile}>Menu</div>
+      <div className = {classes.desktop}>Spraymate</div>
+      <nav className = {classes.desktop}> 
         <NavItems/>
       </nav>
     </header>
