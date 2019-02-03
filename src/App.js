@@ -7,6 +7,7 @@ import TestimonialList from './component/testimonialList/testimonialList';
 import Contact from './component/contact/contact';
 import {Route} from 'react-router-dom';
 import Background from './component/background/background';
+import SideDrawer from './component/Navigation/sideDrawer/sideDrawer';
 
 
 
@@ -15,6 +16,7 @@ class App extends Component {
     return (
       <div className="App">
         <NavBar />
+        <SideDrawer/>
         <Background/>
         {/* <Gallery /> */}
         <Route path="/Gallery" component={Gallery} />
