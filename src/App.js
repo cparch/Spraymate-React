@@ -8,6 +8,7 @@ import Contact from './component/contact/contact';
 import {Route} from 'react-router-dom';
 import Background from './component/background/background';
 import SideDrawer from './component/Navigation/sideDrawer/sideDrawer';
+import BackDrop from './component/Navigation/sideDrawer/BackDrop/BackDrop'
 
 
 
@@ -15,6 +16,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <BackDrop/>
         <NavBar />
         <SideDrawer/>
         <Background/>
