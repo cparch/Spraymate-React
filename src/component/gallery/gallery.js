@@ -10,9 +10,9 @@ library.add(faArrowCircleLeft, faArrowCircleRight)
 
 class LeftScrollBtn extends Component {
 
-  ClickHandler = (f1) => {
-    f1;
-  };
+  // ClickHandler = (f1) => {
+  //   f1;
+  // };
  
     render() {
       
@@ -20,12 +20,14 @@ class LeftScrollBtn extends Component {
         <div className={classes.body}>
 
               <div className = {classes.leftArrow} 
-                  onClick={() => {this.ClickHandler(this.props.leftBtnClick());}}> 
+                  // onClick={() => {this.ClickHandler(this.props.leftBtnClick());}}> 
+                  onClick={() => {this.props.leftBtnClick()}}> 
                   <FontAwesomeIcon icon="arrow-circle-left" /> 
               </div>
 
               <div className = {classes.rightArrow} 
-                  onClick={() => {this.ClickHandler(this.props.rightBtnClick());}}> 
+                  // onClick={() => {this.ClickHandler(this.props.rightBtnClick());}}> 
+                  onClick={() => {this.props.rightBtnClick()}}> 
                   <FontAwesomeIcon icon="arrow-circle-right" /> 
               </div>
        </div>
