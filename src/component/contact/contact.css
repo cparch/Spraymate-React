@@ -7,3 +7,11 @@
     padding: 20px;
     width: 75%;
 }
+
+@media(max-width:500px){
+    .mainContainer{
+        margin: 30% auto;
+        padding: 10px;
+        width: 95%;
+    }
+}
