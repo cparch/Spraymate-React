@@ -45,7 +45,7 @@ const mapStateToProps = state => {
  
  const mapDispatchToProps = dispatch => {
    return {
-    read_more: (i) => dispatch({type: actionTypes.READ_ME, indexSport: i}),
+    read_more: (i) => dispatch({type: actionTypes.READ_ME, idx: i}),
     read_less: (i) => dispatch({type: actionTypes.READ_LESS, idx: i})
    }  
  }; 

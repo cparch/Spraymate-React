@@ -49,8 +49,8 @@ const reducer = (state = initialState, action) => {
         case actionTypes.READ_ME:
 
             const updatedTestimonialSample = [...sampleTestimony]
-            updatedTestimonialSample[action.indexSport].text = fullParagraph[action.indexSport];
-            updatedTestimonialSample[action.indexSport].showSample = false;
+            updatedTestimonialSample[action.idx].text = fullParagraph[action.idx];
+            updatedTestimonialSample[action.idx].showSample = false;
 
 
             return {
