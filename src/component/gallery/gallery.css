@@ -29,3 +29,15 @@
 	cursor: pointer;
 
 }
+
+@media (max-width: 500px){
+	.leftArrow {
+		font-size: 35px;
+		margin: 90% 0 0 3%;
+
+	}
+	.rightArrow{
+		font-size: 35px;
+		margin: 90% 3% 0 0;
+	}
+}
