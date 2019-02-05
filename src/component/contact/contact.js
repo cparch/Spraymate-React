@@ -14,7 +14,6 @@ const Contact = (props) => {
             header = 'Email Us'
             symbol = 'envelope'
             contactInfo= 'spraymate@comcast.net' />
-
         </div>
     )
 };
