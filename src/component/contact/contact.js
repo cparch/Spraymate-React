@@ -4,18 +4,7 @@ import ContactIndividual from './contactIndividual/contactIndividual';
 
 const Contact = (props) => {
     return (
-<<<<<<< HEAD
-        <div className={classes.contact}>
-            <div> test from contact</div>
-            <div> test from contact</div>
-            <div> test from contact</div>
-            <div> test from contact</div>
-            <div> test from contact</div>
-            <div> test from contact</div>
-            <div> test from contact</div>
-=======
         <div className ={classes.mainContainer}>
-        {/* <div> */}
             <ContactIndividual
             header = 'Call Us'
             symbol = "phone"
@@ -25,7 +14,7 @@ const Contact = (props) => {
             header = 'Email Us'
             symbol = 'envelope'
             contactInfo= 'spraymate@comcast.net' />
->>>>>>> contact
+
         </div>
     )
 };
