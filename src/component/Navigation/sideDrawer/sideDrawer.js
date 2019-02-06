@@ -21,7 +21,7 @@ class sideDrawer extends Component {
         return (
             <div className = {classes.SideDrawer} style = {style}>
                 <nav>
-                    <NavigationItems/>
+                    <NavigationItems className={classes.navItem}/>
                 </nav>   
             </div>
         );
