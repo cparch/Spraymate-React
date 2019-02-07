@@ -16,6 +16,11 @@
     background-color: blue;
 } */
 
+/* .navItem{
+    color: green;
+    font-size: 200px;
+} */
+
 .menuBtn{
     display: flex;
     flex-flow: row;

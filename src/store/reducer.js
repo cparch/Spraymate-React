@@ -19,6 +19,8 @@ const initialState = {
         "https://images.unsplash.com/photo-1523359228466-a955d81a77f4?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=95da52751f0900d753b3c22834462f43&auto=format&fit=crop&w=1534&q=80", 
         "https://norfolkkitchenandbath.scdn8.secure.raxcdn.com/wp-content/uploads/2015/01/Slider-Best-SP-e1438179521426.jpg"
        ],
+
+    // images:['one', 'two', 'three', 'four', 'five', 'six'],
    
     showTestimonial: [...sampleTestimony],
     
@@ -67,8 +69,9 @@ const reducer = (state = initialState, action) => {
                 ...state,
                 showSideDrawer: updatedSideDrawer
             }
+        default: return state;
     }
-   return state;
+  
 };
 
 export default reducer
