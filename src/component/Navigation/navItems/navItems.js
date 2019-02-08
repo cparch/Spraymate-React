@@ -6,16 +6,16 @@ const navItems = (props) => (
     <ul className = {classes.navItems}>
         <NavItem
             link="/Gallery"
-            active> Gallery </NavItem>
+            > Gallery </NavItem>
         <NavItem
             link="/Testimonial"
-            active> Testimony </NavItem>
+            > Testimony </NavItem>
         <NavItem
             link="/About"
-            active> About </NavItem>
+            > About </NavItem>
          <NavItem
             link="/Contact"
-            active> Contact </NavItem>
+            > Contact </NavItem>
     </ul>
 );
 
