@@ -9,11 +9,17 @@
 .navItem a {
     color: black;
     width:100%;
+    border-bottom: 4px solid transparent;
 }
 
-.navItem a:hover{
-    color: peru;
-    background-color: blue;
+.navItem a:hover,
+.navItem a:active,
+.navItem a.active
+{
+    color: white;
+    background-color: green;
+    border-bottom: 4px solid white
+
 }
 
 @media (min-width: 500px) {
@@ -26,7 +32,7 @@
         padding: 0px 10px;
     }
 
-    .navItem a:focus{
+    /* .navItem a:focus{
         background-color: rgba(182, 179, 179, 0.454);
-    }
+    } */
 }
