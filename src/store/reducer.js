@@ -60,15 +60,16 @@ const reducer = (state = initialState, action) => {
                 showTestimonial: updatedTestimonialSample
             }
 
-            case actionTypes.TOOGLE_SIDEDRAWER:
+            case actionTypes.TOOGLE_SIDEDRAWER:{ 
 
-            const SideDrawer = state.showSideDrawer
-            const updatedSideDrawer = !SideDrawer
+                const SideDrawer = state.showSideDrawer
+                const updatedSideDrawer = !SideDrawer
 
-            return {
-                ...state,
-                showSideDrawer: updatedSideDrawer
-            }
+                return {
+                    ...state,
+                    showSideDrawer: updatedSideDrawer
+                }
+            }   
         default: return state;
     }
   
