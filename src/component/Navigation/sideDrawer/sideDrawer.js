@@ -8,7 +8,6 @@ class sideDrawer extends Component {
 
     render() {
 
-        // let showSideDrawer = false;
         let style = {
             transform: "translateX(-100%)"
         }
@@ -21,7 +20,9 @@ class sideDrawer extends Component {
         return (
             <div className = {classes.SideDrawer} style = {style}>
                 <nav>
-                    <NavigationItems className={classes.navItem}/>
+                    <NavigationItems 
+                    className={classes.navItem}
+                    onClick={() => {this.props.Toggle}}/>
                 </nav>   
             </div>
         );
@@ -36,7 +37,6 @@ const mapStateToProps = state => {
  
  const mapDispatchToProps = dispatch => {
    return {
-    // read_less: (i) => dispatch({type: actionTypes.READ_LESS, idx: i})
     Toggle: () => dispatch({type: actionTypes.TOOGLE_SIDEDRAWER})
    }  
  }; 

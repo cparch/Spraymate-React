@@ -1,34 +1,15 @@
-import React, {Component} from "react";
+import React from "react";
 import classes from './navItem.css'
-import { Link } from 'react-router-dom';
-import * as actionTypes from '../../../../store/actions';
-import {connect} from 'react-redux';
+import { NavLink } from 'react-router-dom';
 
-class navItem extends Component {
-    render(props) {
-        return (
+const navItem = (props) => (
         <li className = {classes.navItem}> 
-            {/* <Link className={this.props.active ? classes.active : null}  */}
-            <Link 
-                to={this.props.link}
-                onClick = {() => {this.props.Toggle()}}
-                >{this.props.children} 
-            </Link> 
+            <NavLink 
+                to={props.link}
+                activeClassName = {classes.active}
+                >{props.children} 
+            </NavLink> 
         </li>
-        );
-    }    
-};
-
-const mapStateToProps = state => {
-    return {
-    //    sidedrawerShowing: state.showSideDrawer,
-    };
- };
+    );
  
- const mapDispatchToProps = dispatch => {
-   return {
-    Toggle: () => dispatch({type: actionTypes.TOOGLE_SIDEDRAWER})
-   }  
- }; 
- 
-export default connect(mapStateToProps, mapDispatchToProps)(navItem);
+export default navItem;

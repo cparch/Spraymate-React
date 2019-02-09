@@ -3,7 +3,7 @@ import classes from './navBar.css';
 import NavItems from './navItems/navItems.js';
 import SideDrawerToggleBtn from './sideDrawer/SideDrawerToggleBtn/SideDrawerToggleBtn';
 
-const NavBar = () => {
+const NavBar = (props) => {
   return (
 
     <header className={classes.navBar}> 
