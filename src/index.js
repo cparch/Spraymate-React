@@ -8,8 +8,9 @@ import reducer from './store/reducer';
 import {Provider} from 'react-redux';
 import {BrowserRouter} from 'react-router-dom';
 import '../node_modules/font-awesome/css/font-awesome.min.css';
+import {composeWithDevTools} from 'redux-devtools-extension';
 
-const store = createStore(reducer);
+const store = createStore(reducer, composeWithDevTools());
 
 const app = (
 	<Provider store ={store}>

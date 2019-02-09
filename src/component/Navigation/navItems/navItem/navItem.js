@@ -1,9 +1,8 @@
-import React, {Component} from "react";
+import React from "react";
 import classes from './navItem.css'
-import { Link } from 'react-router-dom';
-import * as actionTypes from '../../../../store/actions';
-import {connect} from 'react-redux';
+import { NavLink } from 'react-router-dom';
 
+<<<<<<< HEAD
 class navItem extends Component {
     render(props) {
         return (
@@ -28,5 +27,18 @@ const mapStateToProps = state => {
     Toggle: () => dispatch({type: actionTypes.TOOGLE_SIDEDRAWER})
    }  
  }; 
+=======
+const NavItem = (props) => (
+        <li className={classes.navItem}
+        onClick={props.onClick}> 
+            <NavLink 
+                to={props.link}
+                activeClassName={classes.active}
+            >
+                {props.children} 
+            </NavLink> 
+        </li>
+    );
+>>>>>>> nav-bar-update-v-2
  
-export default connect(mapStateToProps, mapDispatchToProps)(navItem);
+export default NavItem;

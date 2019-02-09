@@ -11,7 +11,8 @@ class TestimonialList extends Component {
 
             let moreLessButton = "- read more"
 
-            if (this.props.showTestimonial[i].showSample === false){
+            // if (this.props.showTestimonial[i].showSample === false){
+                if (!this.props.showTestimonial[i].showSample){
                 moreLessButton = null
             }
             
