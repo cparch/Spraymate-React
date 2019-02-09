@@ -4,7 +4,7 @@ import ContactIndividual from './contactIndividual/contactIndividual';
 
 const Contact = (props) => {
     return (
-        <div className ={classes.mainContainer}>
+        <div className={classes.mainContainer}>
             <ContactIndividual
             header = 'Call Us'
             symbol = "phone"
