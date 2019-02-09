@@ -1,46 +1,45 @@
-import React, {Component} from "react";
+import React from "react";
 import * as actionTypes from '../../../store/actions';
-import {connect} from 'react-redux';
+import { connect } from 'react-redux';
 import NavigationItems from '../navItems/navItems';
 import classes from './sideDrawer.css';
 
-class sideDrawer extends Component {
+// const props = {
+//     a: 1,
+//     b: 2
+// }
+// const { a, b } = props
+// console.log(b);
 
-    render() {
+const SideDrawer = ({ sidedrawerShowing, toggle }) => {
+    let style = {
+        transform: "translateX(-100%)"
+    }
 
-        let style = {
-            transform: "translateX(-100%)"
-        }
+    if (sidedrawerShowing) {
+        style.transform = "translateX(0)"
+    }
 
-        if(this.props.sidedrawerShowing === true) {
-            style.transform = "translateX(0)"
-        }
-
-   
-        return (
-            <div className = {classes.SideDrawer} style = {style}>
-                <nav>
-                    <NavigationItems 
+    return (
+        <div className={classes.SideDrawer} style={style}>
+            <nav>
+                <NavigationItems 
                     className={classes.navItem}
-                    onClick={() => {this.props.Toggle()}}/>
-                    />
-                </nav>   
-            </div>
-        );
-    }    
-}
+                    onClick={toggle}
+                />
+            </nav>   
+        </div>
+    );
+};
 
-const mapStateToProps = state => {
-    return {
-       sidedrawerShowing: state.showSideDrawer,
-    };
- };
+
+const mapStateToProps = state => ({
+    sidedrawerShowing: state.showSideDrawer
+});
  
- const mapDispatchToProps = dispatch => {
-   return {
-    Toggle: () => dispatch({type: actionTypes.TOOGLE_SIDEDRAWER}),
-   }  
- }; 
+ const mapDispatchToProps = dispatch => ({
+    toggle: () => dispatch({type: actionTypes.TOOGLE_SIDEDRAWER})
+ }); 
  
-export default connect(mapStateToProps, mapDispatchToProps)(sideDrawer);
+export default connect(mapStateToProps, mapDispatchToProps)(SideDrawer);
 
