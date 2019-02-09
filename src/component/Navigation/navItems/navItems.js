@@ -2,21 +2,37 @@ import React from 'react';
 import classes from './navItems.css';
 import NavItem from './navItem/navItem';
 
-const navItems = (props) => (
+const pages = [
+    {
+        link: "/Gallery",
+        name: "Gallery"
+    },
+    {
+        link: "/Testimonial",
+        name: "Testimonial"
+    },    
+    {
+        link: "/About",
+        name: "About"
+    },
+    {
+        link: "/Contact",
+        name: "Contact"
+    }
+];
+
+
+const NavItems = (props) => (
     <ul className = {classes.navItems}>
-        <NavItem
-            link="/Gallery"
-            > Gallery </NavItem>
-        <NavItem
-            link="/Testimonial"
-            > Testimony </NavItem>
-        <NavItem
-            link="/About"
-            > About </NavItem>
-         <NavItem
-            link="/Contact"
-            > Contact </NavItem>
+        {pages.map(page => (
+            <NavItem
+                link={page.link}
+                onClick={props.onClick}
+            > 
+                {page.name} 
+            </NavItem> 
+        ))}
     </ul>
 );
 
-export default navItems;
+export default NavItems;
