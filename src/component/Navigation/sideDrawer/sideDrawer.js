@@ -4,25 +4,34 @@ import { connect } from 'react-redux';
 import NavigationItems from '../navItems/navItems';
 import classes from './sideDrawer.css';
 
-const SideDrawer = (props) => {
+// const props = {
+//     a: 1,
+//     b: 2
+// }
+// const { a, b } = props
+// console.log(b);
+
+const SideDrawer = ({ sidedrawerShowing, toggle }) => {
     let style = {
         transform: "translateX(-100%)"
     }
-    if (props.sidedrawerShowing) {
+
+    if (sidedrawerShowing) {
         style.transform = "translateX(0)"
     }
 
     return (
-        <div className = {classes.SideDrawer} style = {style}>
+        <div className={classes.SideDrawer} style={style}>
             <nav>
                 <NavigationItems 
-                className={classes.navItem}
-                onClick={() => {props.Toggle()}}/>
+                    className={classes.navItem}
+                    onClick={toggle}
                 />
             </nav>   
         </div>
-    );   
-}
+    );
+};
+
 
 const mapStateToProps = state => ({
     sidedrawerShowing: state.showSideDrawer
@@ -33,4 +42,3 @@ const mapStateToProps = state => ({
  }); 
  
 export default connect(mapStateToProps, mapDispatchToProps)(SideDrawer);
-
