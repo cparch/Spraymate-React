@@ -4,11 +4,11 @@ import { connect } from 'react-redux';
 import NavigationItems from '../navItems/navItems';
 import classes from './sideDrawer.css';
 
-const SideDrawer = ({ sidedrawerShowing, toggle }) => {
+const SideDrawer = (props) => {
     let style = {
         transform: "translateX(-100%)"
     }
-    if (sidedrawerShowing) {
+    if (props.sidedrawerShowing) {
         style.transform = "translateX(0)"
     }
 
@@ -17,7 +17,7 @@ const SideDrawer = ({ sidedrawerShowing, toggle }) => {
             <nav>
                 <NavigationItems 
                 className={classes.navItem}
-                onClick={() => {this.props.Toggle()}}/>
+                onClick={() => {props.Toggle()}}/>
                 />
             </nav>   
         </div>
