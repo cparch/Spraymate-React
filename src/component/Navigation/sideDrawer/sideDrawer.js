@@ -22,7 +22,8 @@ class sideDrawer extends Component {
                 <nav>
                     <NavigationItems 
                     className={classes.navItem}
-                    onClick={() => {this.props.Toggle}}/>
+                    onClick={() => {this.props.Toggle()}}/>
+                    />
                 </nav>   
             </div>
         );
@@ -37,7 +38,7 @@ const mapStateToProps = state => {
  
  const mapDispatchToProps = dispatch => {
    return {
-    Toggle: () => dispatch({type: actionTypes.TOOGLE_SIDEDRAWER})
+    Toggle: () => dispatch({type: actionTypes.TOOGLE_SIDEDRAWER}),
    }  
  }; 
  
