@@ -8,7 +8,6 @@ class navItem extends Component {
     render(props) {
         return (
         <li className = {classes.navItem}> 
-            {/* <Link className={this.props.active ? classes.active : null}  */}
             <Link 
                 to={this.props.link}
                 onClick = {() => {this.props.Toggle()}}
@@ -21,7 +20,6 @@ class navItem extends Component {
 
 const mapStateToProps = state => {
     return {
-    //    sidedrawerShowing: state.showSideDrawer,
     };
  };
  
