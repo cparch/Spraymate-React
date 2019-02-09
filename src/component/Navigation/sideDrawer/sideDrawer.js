@@ -25,7 +25,7 @@ const SideDrawer = ({ sidedrawerShowing, toggle }) => {
             <nav>
                 <NavigationItems 
                     className={classes.navItem}
-                    onClick={toggle}
+                    clickFunc={toggle}
                 />
             </nav>   
         </div>

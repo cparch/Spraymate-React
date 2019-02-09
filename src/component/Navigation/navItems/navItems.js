@@ -27,7 +27,8 @@ const NavItems = (props) => (
         {pages.map(page => (
             <NavItem
                 link={page.link}
-                onClick={props.onClick}
+                // onClick={props.onClick}
+                clickFunc={props.clickFunc}
             > 
                 {page.name} 
             </NavItem> 
