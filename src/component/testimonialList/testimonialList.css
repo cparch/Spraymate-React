@@ -6,13 +6,10 @@
     color: black;
     margin: auto;
     border: black 20 px solid;
-    margin: 10% 12.5%;
+    margin: 10% auto;
     padding: 20px;
-    width: 75%;
+    width: 80%;
     height: 75%;
-    /* overflow: scroll; */
-    /* overflow: hidden; */
-    /* overflow: auto; */
 }
 
 .individualContainer {
@@ -22,7 +19,7 @@
     margin: 20px 20px 0px 20px;
     text-align: center;
     color: black;
-    font-size: 40px;   
+    font-size: 25px;   
 }
 
 .readMore {
@@ -32,5 +29,22 @@
     margin: 0 20px 20px 20px;
     text-align: right;
     color: black;
-    font-size: 20px;   
+    font-size: 15px;   
+}
+
+.readMore:hover {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+@media(max-width: 500px){
+    .mainContainer{
+        width: 96%;
+        margin: 20% 2%;
+        padding: .5%;
+    }
+
+    .individualContainer {
+        font-size: 20px;   
+    }
 }

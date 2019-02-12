@@ -1,0 +1,41 @@
+.navItem {
+    margin: 10px 0;
+    width: 100%;
+    box-sizing: border-box;
+    display: block;
+    text-decoration: none;
+}
+
+.navItem a {
+    color: black;
+    width:100%;
+    border-bottom: 4px solid transparent;
+}
+
+.navItem a:hover,
+.navItem a:active,
+.navItem a.active
+{
+    color: white;
+    background-color: green;
+    border-bottom: 4px solid white
+
+}
+
+@media (min-width: 500px) {
+    .navItem {
+        margin: 0;
+        display: inline;
+    }
+    
+    .navItem a {
+        padding: 0px 10px;
+    }
+
+    /* .navItem a:focus{
+        background-color: rgba(182, 179, 179, 0.454);
+    } */
+ } 
+
+
+

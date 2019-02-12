@@ -1,7 +1,17 @@
-.contact {
-    background-color: palevioletred;
-    width: 25%;
-    margin: auto;
+.mainContainer {
+    background-color: rgba(128, 128, 128, 0.8);
     display: block;
-    margin: auto;
+    color: black;
+    border: black 20 px solid;
+    margin: 15% 12.5%;
+    padding: 20px;
+    width: 75%;
+}
+
+@media(max-width:500px){
+    .mainContainer{
+        margin: 30% auto;
+        padding: 10px;
+        width: 95%;
+    }
 }

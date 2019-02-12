@@ -9,37 +9,19 @@ import { faArrowCircleLeft, faArrowCircleRight } from '@fortawesome/free-solid-s
 library.add(faArrowCircleLeft, faArrowCircleRight)
 
 class LeftScrollBtn extends Component {
-
-    // updateImg = () => {
-    //   document.body.style.background = `url(${this.props.images[this.props.count]})`; 
-    //   document.body.style.backgroundRepeat = "no repeat";
-    //   document.body.style.backgroundPosition = 'center';
-    //   document.body.style.backgroundSize = 'cover';
-    //   document.body.style.backgroundAttachment = 'fixed'
-    // };
-
-  //  ClickHandler = (f1) => {
-  //     f1;
-  //     setTimeout(this.updateImg, 1)
-  //   };
-
-  ClickHandler = (f1) => {
-    f1;
-  };
  
-    
     render() {
       
       return (
         <div className={classes.body}>
 
-              <div className = {classes.leftArrow} 
-                  onClick={() => {this.ClickHandler(this.props.leftBtnClick());}}> 
+              <div className = {classes.leftArrow}
+                  onClick={() => {this.props.leftBtnClick()}}> 
                   <FontAwesomeIcon icon="arrow-circle-left" /> 
               </div>
 
               <div className = {classes.rightArrow} 
-                  onClick={() => {this.ClickHandler(this.props.rightBtnClick());}}> 
+                  onClick={() => {this.props.rightBtnClick()}}> 
                   <FontAwesomeIcon icon="arrow-circle-right" /> 
               </div>
        </div>
