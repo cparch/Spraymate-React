@@ -15,14 +15,20 @@ class LeftScrollBtn extends Component {
       return (
         <div className={classes.body}>
 
-              <div className = {classes.leftArrow}
-                  onClick={() => {this.props.leftBtnClick()}}> 
-                  <FontAwesomeIcon icon="arrow-circle-left" /> 
+              <div> 
+                  <FontAwesomeIcon 
+                    className = {classes.leftArrow}
+                    icon="arrow-circle-left"
+                    onClick={() => {this.props.leftBtnClick()}} 
+                  /> 
               </div>
 
-              <div className = {classes.rightArrow} 
-                  onClick={() => {this.props.rightBtnClick()}}> 
-                  <FontAwesomeIcon icon="arrow-circle-right" /> 
+              <div> 
+                  <FontAwesomeIcon 
+                    className = {classes.rightArrow}
+                    icon="arrow-circle-right" 
+                    onClick={() => {this.props.rightBtnClick()}}
+                  /> 
               </div>
        </div>
       );
