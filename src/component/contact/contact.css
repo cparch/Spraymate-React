@@ -9,7 +9,7 @@
 }
 
 .container {
-    border:  1em solid white;
+    border:  5px solid white;
     width: 40%;
     display: inline-block;
     margin: 5%;
@@ -17,7 +17,7 @@
 }
 
 header {
-    background-color: aquamarine;
+    background-color: rgb(60, 124, 233);
     display: inline;
     display: block;
     text-align: center;
@@ -28,7 +28,7 @@ header {
 }
 
 .symbol {
-    background-color: aquamarine;
+    background-color: rgb(60, 124, 233);
     display: inline;
     display: block;
     text-align: center;
@@ -37,7 +37,7 @@ header {
 }
 
 .contactInfo {
-    background-color: aquamarine;
+    background-color: rgb(60, 124, 233);
     display: inline;
     display: block;
     text-align: center;
@@ -60,7 +60,7 @@ a:focus{
     }
 
     .contactInfo {
-        background-color: aquamarine;
+        background-color: rgb(60, 124, 233);
         display: inline;
         display: block;
         text-align: center;
