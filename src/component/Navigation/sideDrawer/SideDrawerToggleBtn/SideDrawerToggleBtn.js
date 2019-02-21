@@ -1,12 +1,26 @@
 import React, {Component} from "react";
+import classes from './SideDrawerToggleBtn.css';
 import * as actionTypes from '../../../../store/actions';
 import {connect} from 'react-redux';
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBars } from '@fortawesome/free-solid-svg-icons'
+
+library.add(faBars)
+
+
 
 class SideDrawerToggleBtn extends Component {
 
     render() {
         return (
-            <div onClick = {() => {this.props.Toggle()}}>Menu</div>
+            <div 
+                className={classes.header}
+                onClick = {() => {this.props.Toggle()}}
+            >
+                <FontAwesomeIcon icon="bars"/>
+                <div className={classes.spraymate}>Spraymate</div>
+            </div>
         )
     }
 }
