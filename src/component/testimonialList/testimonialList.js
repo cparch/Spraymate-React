@@ -46,6 +46,7 @@ class TestimonialList extends Component {
         return (
 
         <div className={classes.mainContainer}>
+        {/* <div> */}
             {testimonialLists}
         </div>
         )
