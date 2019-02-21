@@ -10,16 +10,15 @@
     color: black;
     width:100%;
     border-bottom: 4px solid transparent;
+    font-size: 20px;
 }
 
 .navItem a:hover,
 .navItem a:active,
 .navItem a.active
 {
-    color: white;
-    background-color: green;
-    border-bottom: 4px solid white
-
+    color: rgb(60, 124, 233);
+    text-decoration: underline;
 }
 
 @media (min-width: 500px) {
@@ -31,11 +30,4 @@
     .navItem a {
         padding: 0px 10px;
     }
-
-    /* .navItem a:focus{
-        background-color: rgba(182, 179, 179, 0.454);
-    } */
  } 
-
-
-
