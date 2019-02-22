@@ -16,10 +16,11 @@ class SideDrawerToggleBtn extends Component {
         return (
             <div 
                 className={classes.header}
-                onClick = {() => {this.props.Toggle()}}
-            >
-                <FontAwesomeIcon icon="bars"/>
-                <div className={classes.spraymate}>Spraymate</div>
+                onClick = {() => {this.props.Toggle()}}>
+                    <FontAwesomeIcon 
+                        icon="bars"
+                        className={classes.icon}/>
+                    <div className={classes.spraymate}>Spraymate</div>
             </div>
         )
     }
