@@ -36,10 +36,14 @@
 	.leftArrow {
 		font-size: 35px;
 		margin: 90% 0 0 3%;
+		color: rgb(60, 124, 233);
+		background-color: white;
 
 	}
 	.rightArrow{
 		font-size: 35px;
 		margin: 90% 3% 0 0;
+		color: rgb(60, 124, 233);
+		background-color: white;
 	}
 }
