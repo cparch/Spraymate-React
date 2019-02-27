@@ -11,7 +11,6 @@ import SideDrawer from './component/Navigation/sideDrawer/sideDrawer';
 import BackDrop from './component/Navigation/sideDrawer/BackDrop/BackDrop'
 
 
-
 class App extends Component {
   render() {
     return (

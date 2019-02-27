@@ -1,52 +1,22 @@
-import React, {Component} from "react";
-import * as actionTypes from '../../store/actions';
-import {connect} from 'react-redux';
-import classes from './gallery.css';
-import { library } from '@fortawesome/fontawesome-svg-core'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faArrowCircleLeft, faArrowCircleRight } from '@fortawesome/free-solid-svg-icons'
-
-library.add(faArrowCircleLeft, faArrowCircleRight)
-
-class LeftScrollBtn extends Component {
+import React, { Component } from 'react';
+import "react-responsive-carousel/lib/styles/carousel.css";
+import { Carousel } from 'react-responsive-carousel';
  
-    render() {
-      
-      return (
-        <div className={classes.body}>
+class DemoCarousel extends Component {
+  render() {
+    return (
+      <Carousel>
 
-              <div> 
-                  <FontAwesomeIcon 
-                    className = {classes.leftArrow}
-                    icon="arrow-circle-left"
-                    onClick={() => {this.props.leftBtnClick()}} 
-                  /> 
-              </div>
-
-              <div> 
-                  <FontAwesomeIcon 
-                    className = {classes.rightArrow}
-                    icon="arrow-circle-right" 
-                    onClick={() => {this.props.rightBtnClick()}}
-                  /> 
-              </div>
-       </div>
-      );
-    }
+        <div>
+          <img src="https://images.unsplash.com/photo-1531804055935-76f44d7c3621?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" />
+        </div>
+        <div>
+          <img src="https://envato-shoebox-0.imgix.net/2a41/93b3-6f8b-4f1c-8767-cd9772b4ded7/kave+310.jpg?w=500&h=278&fit=crop&crop=edges&auto=compress%2Cformat&s=fbc0d75299d7cfda0b3c60ea52ba4aaf" />
+        </div>
+      </Carousel>
+    );
   }
-
-  const mapStateToProps = state => {
-    return {
-       count: state.count,
-       images: state.images,
-    };
- };
+};
  
- const mapDispatchToProps = dispatch => {
-   return {
-     rightBtnClick: () => dispatch({type: actionTypes.ADD_TO_COUNT}),
-     leftBtnClick: () => dispatch({type: actionTypes.REMOVE_FROM_COUNT}),   
-   }  
- }; 
- 
-  export default connect(mapStateToProps, mapDispatchToProps)(LeftScrollBtn);
+// ReactDOM.render(<DemoCarousel />, document.querySelector('.demo-carousel'));
+export default DemoCarousel;
