@@ -1,19 +1,7 @@
 .mainContainer {
-    /* background-color: rgba(128, 128, 128, 0.8); */
-    /* width: 25%;
-    margin: auto;
-    display: block;
-    color: black;
-    margin: auto;
-    border: black 20 px solid;
-    margin: 10% auto;
-    padding: 20px;
-    width: 80%;
-    height: 75%; */
     padding-top: 10%;
     width: 75%;
     margin: 0 auto;
-  
 }
 
 .individualContainer {
@@ -21,10 +9,23 @@
     display: block;
     padding: 20px 20px 0px 20px;
     margin: 20px 20px 0px 20px;
-    text-align: center;
+    /* text-align: center; */
     color: black;
     font-size: 25px;   
 }
+.icon{
+   font-size: 50px;
+   display: inline;
+}
+
+.personInfo{
+    display: inline;
+}
+
+.quote {
+    padding: 20px;
+}
+
 
 .readMore {
     background-color: rgba(128, 128, 128, 0.95);
