@@ -1,18 +1,39 @@
 import React, { Component } from 'react';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
+import photo1 from '../../images/1.jpg'
+import photo2 from '../../images/2.jpeg'
+import photo3 from '../../images/3.jpeg'
+import photo4 from '../../images/4.jpg'
+import photo5 from '../../images/5.jpeg'
+import photo6 from '../../images/6.jpg'
+
 
 class DemoCarousel extends Component {
   render() {
     return (
-      <Carousel>
-
+      <Carousel 
+      showThumbs={false}
+      useKeyboardArrows={true}>
+         <div>
+          <img src= {photo1} />
+        </div>
+        {/* <div>
+          <img src= {photo2} />
+        </div> */}
         <div>
-          <img src="https://images.unsplash.com/photo-1531804055935-76f44d7c3621?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" />
+          <img src= {photo3} />
         </div>
         <div>
-          <img src="https://envato-shoebox-0.imgix.net/2a41/93b3-6f8b-4f1c-8767-cd9772b4ded7/kave+310.jpg?w=500&h=278&fit=crop&crop=edges&auto=compress%2Cformat&s=fbc0d75299d7cfda0b3c60ea52ba4aaf" />
+          <img src= {photo4} />
         </div>
+        {/* <div>
+          <img src= {photo5} />
+        </div> */}
+        <div>
+          <img src= {photo6} />
+        </div>
+       
       </Carousel>
     );
   }
