@@ -1,19 +1,14 @@
 .mainContainer {
-    /* background-color: rgba(128, 128, 128, 0.8); */
-    /* display: block; */
-    /* color: black; */
-    /* border: black 20 px solid; */
-    margin: 15% 12.5%;
-    /* padding: 20px; */
-    /* width: 75%; */
+    display: flex;
+    margin: 15% auto;
+    padding: 10px;
+    width: 80%;
 }
 
 .container {
     border:  5px solid white;
     width: 40%;
-    display: inline-block;
     margin: 5%;
-
 }
 
 header {
@@ -44,37 +39,29 @@ header {
     padding: 10%;
     font-size: 20px;
 }
+
 a {
     color: black;
-    cursor: pointer;
+  
+  cursor: pointer;
 }
-a:focus{
+
+a:focus {
     text-decoration: underline;
 }
 
-@media (max-width: 800px) {
-    .container{
-        display: block;
-        margin: 5%;
-        width: 90%;
-    }
+ 
+@media (max-width: 500px){
 
-    .contactInfo {
-        background-color: rgb(60, 124, 233);
-        display: inline;
-        display: block;
-        text-align: center;
-        /* padding: 10%;
-        padding-left: 5%;
-        padding-top: 5%; */
-        font-size: 20px;
-    }
-}
-
-@media(max-width:500px){
-    .mainContainer{
-        margin: 15% auto;
+    .mainContainer {
+        margin: 50px auto;
         padding: 10px;
         width: 95%;
+        display: block;
+    }
+
+    .container {
+        margin: 25px auto;
+        width: 90%;
     }
 }
