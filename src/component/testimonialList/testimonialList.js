@@ -2,6 +2,11 @@ import React, {Component} from "react";
 import classes from './testimonialList.css';
 import * as actionTypes from '../../store/actions';
 import {connect} from 'react-redux';
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowAltCircleLeft, faIgloo, faUserCircle  } from '@fortawesome/free-solid-svg-icons'
+
+library.add(faArrowAltCircleLeft, faIgloo, faUserCircle)
 
 class TestimonialList extends Component {
 
@@ -16,23 +21,37 @@ class TestimonialList extends Component {
             "No matter how carefully I look, the piece seems as good as when I brought it home",
             "I have been using Spraymate for ten years. As a professional painting contractor I appreciate great quality and timely service"]
 
-
-            
+            const PersonInfo = [{name: "Herb K.", location: "Oakland"}, 
+            {name:"Gayle C.", location: "Daily City"}, 
+            {name:"John H.", location: "Redwood City"}]
 
             if (!this.props.showTestimonial[i].showSample){
                 return (
-                   <div>
+                   <div className = {classes.individualContainer}>
+                        <div> 
+                            <FontAwesomeIcon
+                             className={classes.icon}
+                             icon='user-circle' />
+                            {PersonInfo[i].name}  - {PersonInfo[i].location}
+                        </div>
+                       
                         <div className = {classes.individualContainer}> {fullParagraph[i]} </div> 
 
                         <div className = {classes.readMore}
                         onClick = {() => {this.props.read_less(i)}}> -read less </div>
-                        {/* onClick = {() => {console.log(i)}}> -read less </div> */}
                    </div>
                 )
             } else {
                 return(
-                    <div>
-                        <div className = {classes.individualContainer}> {sampleTestimony[i]} </div> 
+                    <div className = {classes.individualContainer}>
+                        <div> 
+                            <FontAwesomeIcon
+                             className={classes.icon}
+                             icon='user-circle' />
+                            {PersonInfo[i].name}  - {PersonInfo[i].location}
+                        </div>
+
+                        <div className={classes.quote}>  "{sampleTestimony[i]}..." </div> 
 
                         <div className = {classes.readMore}
                             onClick = {() => {this.props.read_more(i)}}> -read more 
@@ -46,7 +65,7 @@ class TestimonialList extends Component {
         return (
 
         <div className={classes.mainContainer}>
-        {/* <div> */}
+           
             {testimonialLists}
         </div>
         )
