@@ -26,33 +26,33 @@ class TestimonialList extends Component {
 
             if (!this.props.showTestimonial[i].showSample){
                 return (
-                   <div className = {classes['individualContainer']}>
+                   <div className = {classes['testimonial--individualContainer']}>
                         <div> 
                             <FontAwesomeIcon
-                             className={classes['icon']}
+                             className={classes['testimonial--icon']}
                              icon='user-circle' />
                             {PersonInfo[i].name}  - {PersonInfo[i].location}
                         </div>
                        
-                        <div className = {classes['individualContainer']}> {fullParagraph[i]} </div> 
+                        <div className = {classes['testimonial--individualContainer']}> {fullParagraph[i]} </div> 
 
-                        <div className = {classes['readMore']}
+                        <div className = {classes['testimonial--readMore']}
                         onClick = {() => {this.props.read_less(i)}}> -read less </div>
                    </div>
                 )
             } else {
                 return(
-                    <div className = {classes['individualContainer']}>
+                    <div className = {classes['testimonial--individualContainer']}>
                         <div> 
                             <FontAwesomeIcon
-                             className={classes['icon']}
+                             className={classes['testimonial--icon']}
                              icon='user-circle' />
                             {PersonInfo[i].name}  - {PersonInfo[i].location}
                         </div>
 
-                        <div className={classes['quote']}>  "{sampleTestimony[i]}..." </div> 
+                        <div className={classes['testimonial--quote']}>  "{sampleTestimony[i]}..." </div> 
 
-                        <div className = {classes['readMore']}
+                        <div className = {classes['testimonial--readMore']}
                             onClick = {() => {this.props.read_more(i)}}> -read more 
                         </div>
 
@@ -63,7 +63,7 @@ class TestimonialList extends Component {
                 });
         return (
 
-        <div className={classes['mainContainer']}>
+        <div className={classes['testimonial--mainContainer']}>
            
             {testimonialLists}
         </div>

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-// import "react-responsive-carousel/lib/styles/carousel.min.css";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "./galleryOverRide.min.css";
 import { Carousel } from 'react-responsive-carousel';
 import photo1 from '../../images/1.jpg'
