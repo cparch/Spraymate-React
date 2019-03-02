@@ -158,8 +158,8 @@ module.exports = {
           // in development "style" loader enables hot editing of CSS.
           {
             test: /\.css$/,
-            exclude: [/react-responsive-carousel\/lib\/styles\/carousel.min.css$/, '../src/component/gallery/galleryOverRide.min.css'],
-            use: [
+            exclude: [/react-responsive-carousel\/lib\/styles\/carousel.min.css$/, /galleryOverRide.min.css$/],
+            use: [                                         
               require.resolve('style-loader'),
               {
                 loader: require.resolve('css-loader'),
@@ -193,8 +193,7 @@ module.exports = {
             ],
           },
           {
-            test: [/react-responsive-carousel\/lib\/styles\/carousel.min.css$/, 
-              '../src/component/gallery/galleryOverRide.min.css'],
+            test: [/react-responsive-carousel\/lib\/styles\/carousel.min.css$/, /galleryOverRide.min.css$/],
             use: ['style-loader', 'css-loader']
           },
           // "file" loader makes sure those assets get served by WebpackDevServer.
