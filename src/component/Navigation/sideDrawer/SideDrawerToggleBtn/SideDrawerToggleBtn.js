@@ -15,12 +15,12 @@ class SideDrawerToggleBtn extends Component {
     render() {
         return (
             <div 
-                className={classes.header}
+                className={classes['sideDrawerToggleBtn--header']}
                 onClick = {() => {this.props.Toggle()}}>
                     <FontAwesomeIcon 
                         icon="bars"
-                        className={classes.icon}/>
-                    <div className={classes.spraymate}>Spraymate</div>
+                        className={classes['sideDrawerToggleBtn--icon']}/>
+                    <div className={classes['sideDrawerToggleBtn--spraymate']}>Spraymate</div>
             </div>
         )
     }

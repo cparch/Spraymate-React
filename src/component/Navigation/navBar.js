@@ -4,14 +4,15 @@ import NavItems from './navItems/navItems.js';
 import SideDrawerToggleBtn from './sideDrawer/SideDrawerToggleBtn/SideDrawerToggleBtn';
 
 const NavBar = (props) => {
+  console.log(classes);
   return (
 
-    <header className={classes.navBar}> 
-      <div className={classes.mobile}>
+    <header className={classes['navBar--navBar']}> 
+      <div className={classes['navBar--mobile']}>
         <SideDrawerToggleBtn/>
       </div>
-      <div className = {classes.desktop}>Spraymate</div>
-      <nav className = {classes.desktop}> 
+      <div className = {classes['navBar--desktop']}>Spraymate</div>
+      <nav className = {classes['navBar--desktop']}> 
         <NavItems/>
       </nav>
     </header>

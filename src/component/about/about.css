@@ -1,4 +1,4 @@
-.about {
+.about--about {
     background-color: rgb(91, 179, 227);
     width: 92%;
     margin: 20% auto;
@@ -7,7 +7,7 @@
     padding: 0% 5% 5% 5%;
 }  
 
-.paragraph {
+.about--paragraph {
     text-indent: 50px;
     padding-top: 5%
 }

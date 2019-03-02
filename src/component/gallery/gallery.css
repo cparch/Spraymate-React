@@ -30,7 +30,11 @@ document.body.style.backgroundSize = 'cover';
 document.body.style.backgroundPosition = 'center';
 document.body.style.backgroundAttachment = 'fixed' */
 
-.leftArrow {
+.gallery--photo {
+	
+}
+
+.gallery--leftArrow {
 	font-size: 100px;
 	font-weight: 100px;
 	color: white;
@@ -41,12 +45,12 @@ document.body.style.backgroundAttachment = 'fixed' */
 	border-radius: 50%;
 }
 
-.leftArrow:hover {
+.gallery--leftArrow:hover {
 	color: rgb(60, 124, 233);
 	background-color: white;
 }
 
-.rightArrow {
+.gallery--rightArrow {
 	font-size: 100px;
 	font-weight: 100px;
 	color: white;
@@ -59,20 +63,20 @@ document.body.style.backgroundAttachment = 'fixed' */
 	
 }
 
-.rightArrow:hover{
+.gallery--rightArrow:hover{
 	color: rgb(60, 124, 233);
 	background-color: white;
 }
 
 @media (max-width: 500px){
-	.leftArrow {
+	.gallery--leftArrow {
 		font-size: 35px;
 		margin: 90% 0 0 3%;
 		color: rgb(60, 124, 233);
 		background-color: white;
 
 	}
-	.rightArrow{
+	.gallery--rightArrow{
 		font-size: 35px;
 		margin: 90% 3% 0 0;
 		color: rgb(60, 124, 233);

@@ -1,4 +1,4 @@
-.SideDrawer {
+.sideDrawer--SideDrawer {
     position: fixed;
     width: 70%;
     height: 100%;
@@ -21,21 +21,21 @@
     font-size: 200px;
 } */
 
-.menuBtn{
+.sideDrawer--menuBtn{
     display: flex;
     flex-flow: row;
 }
 
 @media (min-width: 500px){
-    .SideDrawer{
+    .sideDrawer--SideDrawer{
         display: none;
     }
 }
 
-.Open{
+.sideDrawer--Open{
     transform: translateX(0);
 }
 
-.Close{
+.sideDrawer--Close{
     transform: translateX(-100%);
 }

@@ -21,10 +21,10 @@ const SideDrawer = ({ sidedrawerShowing, toggle }) => {
     }
 
     return (
-        <div className={classes.SideDrawer} style={style}>
+        <div className={classes['sideDrawer--SideDrawer']} style={style}>
             <nav>
                 <NavigationItems 
-                    className={classes.navItem}
+                    className={classes['sideDrawer--navItem']}
                     clickFunc={toggle}
                 />
             </nav>   

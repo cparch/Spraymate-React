@@ -1,10 +1,10 @@
-.mainContainer {
+.testimonial--mainContainer {
     padding-top: 10%;
     width: 75%;
     margin: 0 auto;
 }
 
-.individualContainer {
+.testimonial--individualContainer {
     background-color: rgba(128, 128, 128, 0.95);
     display: block;
     padding: 20px 20px 0px 20px;
@@ -13,21 +13,21 @@
     color: black;
     font-size: 25px;   
 }
-.icon{
+.testimonial--icon{
    font-size: 50px;
    display: inline;
 }
 
-.personInfo{
+.testimonial--personInfo{
     display: inline;
 }
 
-.quote {
+.testimonial--quote {
     padding: 20px;
 }
 
 
-.readMore {
+.testimonial--readMore {
     background-color: rgba(128, 128, 128, 0.95);
     display: block;
     padding: 0 20px 20px 20px;
@@ -37,13 +37,13 @@
     font-size: 15px;   
 }
 
-.readMore:hover {
+.testimonial--readMore:hover {
     font-weight: bold;
     cursor: pointer;
 }
 
 @media(max-width: 500px){
-    .mainContainer{
+    .testimonial--mainContainer{
         width: 96%;
         margin: 20% 2%;
         padding: .5%;
@@ -51,14 +51,14 @@
         /* background-color: brown; */
     }
 
-    .individualContainer {
+    .testimonial--individualContainer {
         font-size: 16px; 
         text-align: left; 
         padding: 20px 10px 5px 10px;
         margin: 20px 10px 0px 10px;
     }
 
-    .readMore {
+    .testimonial--readMore {
         padding: 0 10px 20px 10px;
         margin: 0px 10px 0px 10px;
         text-align: right;

@@ -1,4 +1,4 @@
-.navBar {
+.navBar--navBar {
     height: 56px;
     width: 100%;
     position: fixed;
@@ -14,27 +14,27 @@
     justify-content: space-between
 }
 
-.navBar nav {
+.navBar--navBar nav {
     height: 100%;
     flex: .25;
     text-align: right;
 }
 
 @media (max-width: 500px){
-    .desktop{
+    .navBar--desktop{
         display: none;
     }
-    .mobile{
+    .navBar--mobile{
         width: 100%;
     }
-    .navBar {
+    .navBar--navBar {
         padding: 16px 10px;
     }
     
 }
 
 @media (min-width: 500px){
-    .mobile{
+    .navBar--mobile{
         display: none;
         /* width: 100%; */
     }

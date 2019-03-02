@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import "react-responsive-carousel/lib/styles/carousel.min.css";
+// import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "./galleryOverRide.min.css";
 import { Carousel } from 'react-responsive-carousel';
 import photo1 from '../../images/1.jpg'
@@ -16,25 +16,10 @@ class DemoCarousel extends Component {
       <Carousel 
       showThumbs={false}
       useKeyboardArrows={true}>
-         <div>
-          <img src= {photo1} />
-        </div>
-        {/* <div>
-          <img src= {photo2} />
-        </div> */}
-        <div>
-          <img src= {photo3} />
-        </div>
-        <div>
-          <img src= {photo4} />
-        </div>
-        {/* <div>
-          <img src= {photo5} />
-        </div> */}
-        <div>
-          <img src= {photo6} />
-        </div>
-       
+          <img class="gallery--photo" src= {photo1} />
+          <img class="gallery--photo" src= {photo3} />
+          <img class="gallery--photo" src= {photo4} />
+          <img class="gallery--photo" src= {photo6} />
       </Carousel>
     );
   }

@@ -1,10 +1,10 @@
-.header {
+.sideDrawerToggleBtn--header {
     display: flex;
     padding: 3%;
     width: 100%
 }
 
-.spraymate {
+.sideDrawerToggleBtn--spraymate {
     text-align: center;
     margin: 0 auto;
     width: 100%;
@@ -12,7 +12,7 @@
     z-index: 100 */
 }
 
-.icon {
+.sideDrawerToggleBtn--icon {
     margin: auto;
     size: 100%;
     /* position: relative;
