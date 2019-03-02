@@ -31,16 +31,19 @@ document.body.style.backgroundPosition = 'center';
 document.body.style.backgroundAttachment = 'fixed' */
 
 .gallery--photo {
-	
+	margin: auto;
+	width: auto;
+	height: auto;
+	max-width: 700px;
 }
 
-.gallery--leftArrow {
+/* .gallery--leftArrow {
 	font-size: 100px;
 	font-weight: 100px;
 	color: white;
 	float: left;
 	margin: 30% 0 0 3%;
-    cursor: pointer;
+  cursor: pointer;
 	display: block;
 	border-radius: 50%;
 }
@@ -82,4 +85,4 @@ document.body.style.backgroundAttachment = 'fixed' */
 		color: rgb(60, 124, 233);
 		background-color: white;
 	}
-}
+} */
