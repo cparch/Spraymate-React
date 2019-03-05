@@ -9,7 +9,9 @@
     border:  5px solid white;
     width: 40%;
     margin: 5%;
-    background-color: rgba(184, 215, 232, 0.85);
+    /* background-color: rgba(184, 215, 232, 0.85); */
+    background-color: rgba(241, 218, 175, 0.8);
+
 }
 
 header {
@@ -49,6 +51,21 @@ a {
 
 a:focus {
     text-decoration: underline;
+}
+
+@media (max-width: 940px){
+
+    .contacts--mainContainer {
+        margin: 50px auto;
+        padding: 10px;
+        width: 80%;
+        display: block;
+    }
+
+    .contacts--container {
+        margin: 25px auto;
+        width: 90%;
+    }
 }
 
  
