@@ -13,11 +13,22 @@
     z-index: 90;
     justify-content: space-between
 }
+.navBar--desktop{
+    padding-left: 13px;
+}
 
 .navBar--navBar nav {
     height: 100%;
     flex: .25;
     text-align: right;
+}
+
+@media (max-width: 847px){
+ 
+    .navBar--navBar {
+        padding: 16px 0px;
+    }
+    
 }
 
 @media (max-width: 500px){
