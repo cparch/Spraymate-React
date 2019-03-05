@@ -5,7 +5,9 @@
 }
 
 .testimonial--individualContainer {
-    background-color: rgba(184, 215, 232, 0.85);
+    /* background-color: rgba(184, 215, 232, 0.85); */
+    background-color: rgba(241, 218, 175, 0.8);
+    border:  5px solid white;
     display: block;
     padding: 20px 20px 0px 20px;
     margin: 20px 20px 0px 20px;
