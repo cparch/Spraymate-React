@@ -18,7 +18,7 @@ class App extends Component {
         <BackDrop/>
         <NavBar />
         <SideDrawer/>
-        <Background/>
+        {/* <Background/> */}
         {/* <Gallery /> */}
         <Route path="/Gallery" component={Gallery} />
         {/* <About/> */}
