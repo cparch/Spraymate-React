@@ -34,7 +34,7 @@ class TestimonialList extends Component {
                             {PersonInfo[i].name}  - {PersonInfo[i].location}
                         </div>
                        
-                        <div className = {classes['testimonial--individualContainer']}> {fullParagraph[i]} </div> 
+                        <div className={classes['testimonial--quote']}> "{fullParagraph[i]}" </div> 
 
                         <div className = {classes['testimonial--readMore']}
                         onClick = {() => {this.props.read_less(i)}}> -read less </div>
