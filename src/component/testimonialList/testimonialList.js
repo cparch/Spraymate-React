@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import classes from './testimonialList.css';
+import classes from './testimonialList.modules.css';
 import * as actionTypes from '../../store/actions';
 import {connect} from 'react-redux';
 import { library } from '@fortawesome/fontawesome-svg-core'

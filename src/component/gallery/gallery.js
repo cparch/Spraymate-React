@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import "./gallery.css";
-import "./galleryOverRide.min.css";
+import classes from "./gallery.module.css";
+// import "./galleryOverRide.min.css";
 import { Carousel } from 'react-responsive-carousel';
 import photo1 from '../../images/1.jpg'
-import photo2 from '../../images/2.jpeg'
+// import photo2 from '../../images/2.jpeg'
 import photo3 from '../../images/3.jpeg'
 import photo4 from '../../images/4.jpg'
-import photo5 from '../../images/5.jpeg'
-import photo6 from '../../images/6.jpg'
+// import photo5 from '../../images/5.jpeg'
+// import photo6 from '../../images/6.jpg'
 
 class DemoCarousel extends Component {
 
@@ -24,19 +24,15 @@ componentWillUnmount(){
   document.body.style.backgroundAttachment = 'fixed'
 }
 
-
-
-
-
   render() {
     return (
-      <div class="gallery">
+      <div className={classes.gallery}>
         <Carousel 
           showThumbs={false}
           useKeyboardArrows={true}>
-              <img class="gallery--photo" src= {photo1} />
-              <img class="gallery--photo" src= {photo3} />
-              <img class="gallery--photo" src= {photo4} />
+              <img class="gallery--photo" src= {photo1} alt=""/>
+              <img class="gallery--photo" src= {photo3} alt="" />
+              <img class="gallery--photo" src= {photo4} alt="" />
               {/* <img class="gallery--photo" src= {photo6} /> */}
         </Carousel>
       </div>

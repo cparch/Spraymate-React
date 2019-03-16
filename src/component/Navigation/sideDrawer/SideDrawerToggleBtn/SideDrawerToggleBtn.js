@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import classes from './SideDrawerToggleBtn.css';
+import classes from './SideDrawerToggleBtn.modules.css';
 import * as actionTypes from '../../../../store/actions';
 import {connect} from 'react-redux';
 import { library } from '@fortawesome/fontawesome-svg-core'

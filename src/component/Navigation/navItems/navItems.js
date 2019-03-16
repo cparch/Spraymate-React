@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from './navItems.css';
+import classes from './navItems.modules.css';
 import NavItem from './navItem/navItem';
 
 const pages = [

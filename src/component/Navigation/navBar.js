@@ -1,5 +1,5 @@
 import React from "react";
-import classes from './navBar.css';
+import classes from './navBar.modules.css';
 import NavItems from './navItems/navItems.js';
 import SideDrawerToggleBtn from './sideDrawer/SideDrawerToggleBtn/SideDrawerToggleBtn';
 

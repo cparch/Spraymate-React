@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import classes from './BackDrop.css'
+import classes from './BackDrop.modules.css'
 import * as actionTypes from '../../../../store/actions';
 import {connect} from 'react-redux';
 

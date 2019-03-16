@@ -2,7 +2,7 @@ import React from "react";
 import * as actionTypes from '../../../store/actions';
 import { connect } from 'react-redux';
 import NavigationItems from '../navItems/navItems';
-import classes from './sideDrawer.css';
+import classes from './sideDrawer.modules.css';
 
 // const props = {
 //     a: 1,
