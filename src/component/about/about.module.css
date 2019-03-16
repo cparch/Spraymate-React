@@ -1,4 +1,4 @@
-.about--about {
+.about {
     /* background-color: rgba(184, 215, 232, 0.85); */
     background-color: rgba(241, 218, 175, 0.8);
     width: 85%;
@@ -7,9 +7,10 @@
     padding: 0 0 20px 0;
     font-size: 21px;
     border:  5px solid white;
+ 
 }  
 
-.about--paragraph {
+.paragraph {
     text-indent: 50px;
     padding-top: 5%;
     padding: 20px 20px 0px 20px;
@@ -18,15 +19,15 @@
 
  
 @media (max-width: 500px){
-    .about--about {
+    .about {
         width: 95%;
-        margin: 20% 2%;
+        margin: 20% auto;
         padding: .5%;
         padding-bottom: 5%;
         font-size: 16px;
     }
 
-    .about--paragraph {
+    .paragraph {
         text-indent: 50px;
         padding: 0px 0px 0px 0px;
     }

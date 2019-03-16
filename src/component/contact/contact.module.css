@@ -1,11 +1,11 @@
-.contacts--mainContainer {
+.mainContainer {
     display: flex;
     margin: 15% auto;
     padding: 10px;
     width: 80%;
 }
 
-.contacts--container {
+.container {
     border:  5px solid white;
     width: 40%;
     margin: 5%;
@@ -25,7 +25,7 @@ header {
     padding-bottom: 5%;
 }
 
-.contacts--symbol {
+.symbol {
     /* background-color: rgb(60, 124, 233); */
     display: inline;
     display: block;
@@ -34,7 +34,7 @@ header {
     font-size: 3em;
 }
 
-.contacts--contactInfo {
+.contactInfo {
     /* background-color: rgb(60, 124, 233); */
     display: inline;
     display: block;
@@ -55,30 +55,29 @@ a:focus {
 
 @media (max-width: 940px){
 
-    .contacts--mainContainer {
+    .mainContainer {
         margin: 50px auto;
         padding: 10px;
         width: 80%;
         display: block;
     }
 
-    .contacts--container {
+    .container {
         margin: 25px auto;
         width: 90%;
     }
 }
-
  
 @media (max-width: 500px){
 
-    .contacts--mainContainer {
+    .mainContainer {
         margin: 50px auto;
         padding: 10px;
         width: 95%;
         display: block;
     }
 
-    .contacts--container {
+    .container {
         margin: 25px auto;
         width: 90%;
     }
