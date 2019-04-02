@@ -29,6 +29,7 @@ const NavItems = (props) => (
                 link={page.link}
                 // onClick={props.onClick}
                 clickFunc={props.clickFunc}
+                key = {page.link}
             > 
                 {page.name} 
             </NavItem> 
