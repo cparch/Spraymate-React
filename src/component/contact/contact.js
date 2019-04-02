@@ -9,7 +9,9 @@ library.add(faPhone, faEnvelope)
 const Contact = (props) => {
     return (
             <div>
-                <form className = {classes.contactFormMainContainer} method="POST" action="https://formspree.io/chadparchila@gmail.com">
+                <form 
+                    className = {classes.contactFormMainContainer} 
+                    method="POST" action="https://formspree.io/chadparchila@gmail.com">
                     <p className={classes.contactFormHeader}> Contact Us </p>
                     <p> Email Address </p>
                     <input 
@@ -27,6 +29,7 @@ const Contact = (props) => {
                         type="submit"> Submit Message
                     </button>
                 </form>
+                
                 <div className={classes.mainContainer}>
                     <div className = {classes.container}>
                         <header>Call Us</header>
