@@ -20,23 +20,23 @@ const initialState = {
 
 const reducer = (state = initialState, action) => {
     switch (action.type) {
-        case actionTypes.ADD_TO_COUNT:
-            return {
-                ...state,
-                count: (state.count + 1) % state.images.length
-            } 
+        // case actionTypes.ADD_TO_COUNT:
+        //     return {
+        //         ...state,
+        //         count: (state.count + 1) % state.images.length
+        //     } 
 
-        case actionTypes.REMOVE_FROM_COUNT:
-            let subtractCount = state.count - 1
+        // case actionTypes.REMOVE_FROM_COUNT:
+        //     let subtractCount = state.count - 1
 
-                if(state.count <= 0){
-                    subtractCount = state.images.length-1
-                 }
+        //         if(state.count <= 0){
+        //             subtractCount = state.images.length-1
+        //          }
             
-                return {
-                    ...state,
-                    count:subtractCount
-                }
+        //         return {
+        //             ...state,
+        //             count:subtractCount
+        //         }
         
         case actionTypes.READ_ME:
 
