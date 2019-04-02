@@ -141,4 +141,8 @@ p {
         width: 82%;
         margin-top: 20%;
     }
+
+    .contactFormSubmitBtn{
+        background-color: rgb(227, 227, 233);
+    }
 }
