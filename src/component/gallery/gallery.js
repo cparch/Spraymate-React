@@ -30,9 +30,9 @@ componentWillUnmount(){
         <Carousel 
           showThumbs={false}
           useKeyboardArrows={true}>
-              <img class="gallery--photo" src= {photo1} alt=""/>
-              <img class="gallery--photo" src= {photo3} alt="" />
-              <img class="gallery--photo" src= {photo4} alt="" />
+              <img className="gallery--photo" src= {photo1} alt=""/>
+              <img className="gallery--photo" src= {photo3} alt="" />
+              <img className="gallery--photo" src= {photo4} alt="" />
               {/* <img class="gallery--photo" src= {photo6} /> */}
         </Carousel>
       </div>
