@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 import classes from './testimonialList.modules.css';
-import * as actionTypes from '../../store/actions';
+import * as action from '../../store/action';
 import {connect} from 'react-redux';
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -79,8 +79,12 @@ const mapStateToProps = state => {
  
  const mapDispatchToProps = dispatch => {
    return {
-    read_more: (i) => dispatch({type: actionTypes.READ_ME, idx: i}),
-    read_less: (i) => dispatch({type: actionTypes.READ_LESS, idx: i})
+    // read_more: (i) => dispatch({type: actionTypes.READ_ME, idx: i}),
+    read_more: (i) => dispatch(action.readMe(i)),
+
+    // read_less: (i) => dispatch({type: actionTypes.READ_LESS, idx: i})
+    read_less: (i) => dispatch(action.readLess(i))
+
    }  
  }; 
  
