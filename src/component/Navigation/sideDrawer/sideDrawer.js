@@ -1,15 +1,8 @@
 import React from "react";
-import * as actionTypes from '../../../store/actions';
+import * as action from '../../../store/action';
 import { connect } from 'react-redux';
 import NavigationItems from '../navItems/navItems';
 import classes from './sideDrawer.modules.css';
-
-// const props = {
-//     a: 1,
-//     b: 2
-// }
-// const { a, b } = props
-// console.log(b);
 
 const SideDrawer = ({ sidedrawerShowing, toggle }) => {
     let style = {
@@ -32,13 +25,12 @@ const SideDrawer = ({ sidedrawerShowing, toggle }) => {
     );
 };
 
-
 const mapStateToProps = state => ({
     sidedrawerShowing: state.showSideDrawer
 });
  
  const mapDispatchToProps = dispatch => ({
-    toggle: () => dispatch({type: actionTypes.TOOGLE_SIDEDRAWER})
+    toggle: () => dispatch(action.toggleSideDrawer())
  }); 
  
 export default connect(mapStateToProps, mapDispatchToProps)(SideDrawer);
