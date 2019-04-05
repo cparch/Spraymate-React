@@ -1,4 +1,4 @@
-import * as actionTypes from './actions';
+import * as actionTypes from './actionType';
 
 const sampleTestimony = [{showSample: true}, {showSample: true},{showSample: true}]
 
