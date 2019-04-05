@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 import classes from './BackDrop.modules.css'
-import * as actionTypes from '../../../../store/actions';
+import * as action from '../../../../store/action';
 import {connect} from 'react-redux';
 
 class BackDrop extends Component {
@@ -35,7 +35,7 @@ const mapStateToProps = state => {
  const mapDispatchToProps = dispatch => {
    return {
     // read_less: (i) => dispatch({type: actionTypes.READ_LESS, idx: i})
-    Toggle: () => dispatch({type: actionTypes.TOOGLE_SIDEDRAWER})
+    Toggle: () => dispatch(action.toggleSideDrawer())
    }  
  }; 
  
