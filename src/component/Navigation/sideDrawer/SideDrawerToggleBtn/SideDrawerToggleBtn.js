@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 import classes from './SideDrawerToggleBtn.modules.css';
-import * as actionTypes from '../../../../store/actions';
+import * as action from '../../../../store/action';
 import {connect} from 'react-redux';
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -34,7 +34,7 @@ const mapStateToProps = state => {
  
  const mapDispatchToProps = dispatch => {
    return {
-    Toggle: () => dispatch({type: actionTypes.TOOGLE_SIDEDRAWER})
+    Toggle: () => dispatch(action.toggleSideDrawer())
    }  
  }; 
  
